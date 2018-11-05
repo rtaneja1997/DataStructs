@@ -35,6 +35,12 @@ class Stack(object):
       return False 
     return self.stack[0] 
   
+  def destroy(self):
+    """Resets stack to empty"""
+    self.minimum=None
+    self.size=0
+    self.stack=[] 
+  
   def __str__(self):
     if self.stack == []:
       return ""
